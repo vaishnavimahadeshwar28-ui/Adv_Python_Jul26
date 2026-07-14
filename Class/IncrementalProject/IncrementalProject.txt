@@ -1,0 +1,4 @@
+Smart Inventory & Sales Management API
+>> Automatic Product Registration using Metaclass
+>> Field Validation using Descriptors
+>> Abstract Product Base Class
