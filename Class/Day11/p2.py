@@ -14,7 +14,7 @@ class AdvancedWorker(threading.Thread):
 
         # Internal flag used to stop the loop in run()
         self._stop_flag = False
-
+        
     def run(self):
         print(f"Thread {self.name}: started")
 
