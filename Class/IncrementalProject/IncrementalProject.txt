@@ -2,3 +2,49 @@ Smart Inventory & Sales Management API
 >> Automatic Product Registration using Metaclass
 >> Field Validation using Descriptors
 >> Abstract Product Base Class
+
+Class\IncrementalProject\registry\registry.py:
+A central regisrtry that keeps track of all product classes 
+_products: is a class level dictionary
+register(cls, product_class): adds a new entry to _products
+display_registered_products: print the names of all registered product types
+
+Class\IncrementalProject\models\descriptors.py:
+__set_name__: called when a class gets created
+__get__ : called when we invoke product.name product.price
+__set__ : called when we add product.price=50000 product.quantity=20
+
+Class\IncrementalProject\models\metaclass.py:
+class ProductMeta: is a metaclass (a class that creates classes)
+__new__ : is called every time a new class gets created
+After the new_class 
+
+Class\IncrementalProject\models\base_product.py:
+Is a ABC which helps in creating details of the product
+
+Class\IncrementalProject\models\product.py:
+BaseProduct as the ABC for all products
+It uses ProductMeta as its metaclass: Abstract methods
+display_details:  @abstractmethod
+BaseProduct interface for products to be created.
+products gets created it has to implement the ABC & abstractmethod
+
+Class\IncrementalProject\main.py:
+>> Importing and class creation process initiation
+>> Instantiating products
+>> Displaying details of the products
+>> Showing the registered product classes
+
+Phase 2:
+>> Functional Programming, Decorators & Closures: 
+
+Phase 3:
+>> Iterators, Generators & Context Managers
+
+Phase 4: 
+>> Concurrency — Threading & Multiprocessing
+Product --> Display
+
+Phase 5: 
+>> Asynchronous Programming with asyncio: 
+    Simulated the supplier details for each of the product
